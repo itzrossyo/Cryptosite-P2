@@ -9,7 +9,7 @@
 
 body {
   background: linear-gradient(355deg, rgb(28, 19, 50) 25%, rgb(12, 9, 32) 80%);
-  background-image: url(/lib/iamges/background.png);
+  background-image: url(/lib/images/background.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -116,6 +116,7 @@ button:hover {
 
 .coin p {
   margin-top: 0;
+  text-align: center;
 }
 
 .footer {
@@ -131,13 +132,38 @@ button:hover {
   font-size: 1.5rem;
 }
 
+.footer p {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(237, 154, 0);
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
-    width: 100%;
+    width: 107%;
   }
   .blockchain-img {
     width: 50%;
     margin: 100px 100px 100px 357px;
   }
+  .top-coins {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .coin {
+    width: 25%;
+  }
 }
 /* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .navbar {
+    width: 102%;
+  }
+  .blockchain-img {
+    width: 50%;
+    margin: 50px 0 -11px 244px;
+  }
+}
