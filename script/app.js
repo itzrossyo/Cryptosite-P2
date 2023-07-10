@@ -87,7 +87,7 @@ sendMsg.addEventListener("click", function () {
   const inputText = userInput.value;
   const response = getResponse(inputText);
   messageBox.innerHTML += `<p>You: ${inputText}</p>`;
-  messageBox.innerHTML += `<p>Bot: ${response}</p>`;
+  messageBox.innerHTML += `<p>GenBot: ${response}</p>`;
   userInput.value = "";
 });
 
@@ -96,7 +96,7 @@ function getResponse(input) {
   if (input.toLowerCase().includes("hello")) {
     return "Hello! How can I assist you today?";
   } else if (input.toLowerCase().includes("help")) {
-    return "Sure, I'm here to help. What do you need assistance with?";
+    return "Sure, I'm here to help. What do you need assistance with? Crypto, buy, sell, swap, get started, wallet, invest, security";
   } else if (input.toLowerCase().includes("crypto")) {
     return "Cryptocurrency, or crypto for short, is a digital or virtual form of currency that uses cryptography for security.";
   } else if (input.toLowerCase().includes("buy")) {
