@@ -5,82 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3ff087e965.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">CryptoSiteV2</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cryptolatestprice.html">Cyrpto Latest Price</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="buysaleswap.html">Buy Sale Swape</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="cryptolatestprice.html">Crypto Latest Price</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="buysaleswap.html">Buy Sale Swape</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+            <a href="#" class="btn">Login</a>
+        </nav>
 
-    <div class="main-section">
-        <h1>Next Gen Grypto</h1>
-        <p>Welcome to the world of next-generation crypto! Our website is your gateway to the future of
-            finance, where blockchain technology revolutionizes the way we interact with currencies.</p>
+        <i class="hamburger fa-solid fa-bars fa-2x toggle_btn"></i>
+
+        <div class="dropdown-menu">
+            <ul>
+                <li>
+                    <a aria-label="Go to home page" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a aria-label="Go to Product page" href="cryptolatestprice.html">crypto Latest Price</a>
+                </li>
+                <li>
+                    <a aria-label="Go to About us page" href="about-us.html">Buy Sale Swap </a>
+                </li>
+                <li>
+                    <a aria-label="Go to About us page" href="about-us.html">about us</a>
+                </li>
+                <li>
+                    <a aria-label="Go to contact page" href="contact-us.html">Login </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="content">
+            <h1>Next Gen <span>Crypto</span></h1>
+            <p>next gen crypto bot trading with the newst and best features.<br>
+                dive into the world of crypto and sit back<br> while we do everything for you.
+            </p>
+            <a href="#" class="btn">Sign Up </a>
+        </div>
+        <p>Hotest Coins</p>
+
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="coins">
+                    <img src="/lib/images/bitcoin.png" alt="btc">
+                    <p id="btcPrice"></p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="coins">
+                    <img src="/lib/images/dogecoin.png" alt="dogecoin">
+                    <p id="dogePrice"></p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="coins">
+                    <img src="/lib/images/etheram.png" alt="">
+                    <p id="ethPrice"></p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
     </div>
-    <img class="bitcoinman-img" src="./lib/images/blockchain.png" alt="">
-    <p>How it works</p>
-    <ul>
-        <li></li>
-    </ul>
-
-    <div class="top-coins">
-        <div class="coin">
-            <img src="./lib/images/bitcoin.png" alt="bitcoin" />
-            <div>
-                <p id="btcPrice">Loading...</p>
-                <p>Bitcoin</p>
-            </div>
-        </div>
-
-        <div class="coin">
-            <img src="./lib/images/dogecoin.png" alt="doge Coin" />
-            <div>
-                <p id="dogePrice">Loading...</p>
-                <p>DodgeCoin</p>
-            </div>
-        </div>
-
-        <div class="coin">
-            <img src="./lib/images/etheram.png" alt="bitcoin" />
-            <div>
-                <p id="ethPrice">Loading...</p>
-                <p>Etherum</p>
-            </div>
-        </div>
     </div>
     <div class="footer">
-        <p>Copyright 2023 vitecrypto</p>
+        <footer>Copyright nextgencrypto</footer>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
 <script src="./script/app.js"></script>
 
 </html>
