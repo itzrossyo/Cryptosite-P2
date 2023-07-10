@@ -195,6 +195,63 @@ nav .btn {
     color: orange;
 }
 
+.bot-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.bot-img {
+    position: absolute;
+    bottom: 25px;
+    right: 3px;
+}
+
+.bot-chatbox {
+    position: absolute;
+    bottom: 32px;
+    right: 3px;
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid orange
+}
+
+.bot-chatbox .bot-title {
+    color: black;
+    border: 1px solid orange;
+    text-align: center;
+}
+
+.message-box {
+    color: black;
+}
+
+.user-input {
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    height: 10%;
+    font-size: 1rem;
+}
+
+.send-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    font-size: 1rem;
+    color: orange;
+    width: 26px;
+    height: 10%;
+}
+
 /* tablet responsive start*/
 
 @media screen and (max-width:770px) {
@@ -285,6 +342,9 @@ nav .btn {
     }
 }
 
+/* mobile responsive END */
+
+/* laptop responsive start */
 @media screen and (min-width:1024px) {
 
     .grid-container {
@@ -294,3 +354,5 @@ nav .btn {
         margin-top: 43%;
     }
 }
+
+/* laptop responsive END */
