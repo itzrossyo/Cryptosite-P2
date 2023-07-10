@@ -106,7 +106,7 @@ width:50%;
   background-color: rgb(237, 154, 0);
   color: white;
 }
-
+    
 @media screen and (min-width: 768px) {
   .navbar {
     width: 107%;
@@ -129,8 +129,17 @@ width:50%;
   .navbar {
     width: 102%;
   }
-  .blockchain-img {
-    width: 50%;
-    margin: 50px 0 -11px 244px;
+    .top-coins {
+    display: flex;
+    justify-content: center;
+    margin: 144px 0 0 auto;
   }
+  .coin {
+    width: 25%;
+  }
+.bitcoinman-img{
+  display: flex;
+    margin: 76px 0 50px 0;
+    width: 34%;
+}
 }
