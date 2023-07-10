@@ -41,56 +41,21 @@ p{
   width: 103%;
 }
 
-.main-intro {
-  width: 100%;
-  margin: 20px 0 20px 20px;
+.main-section{
+margin-top:50px;
+margin-left:10px;
+width:50%;
 }
-
-.main-intro, h1, p {
-  margin-top: 140px;
+.main-section h1{
+  font-size: 1.2rem;
 }
-
-.blockchain-img {
-  width: 85%;
-  margin: 0 auto;
-  margin-left: 30px;
-}
-
-.our-service {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 1rem;
-  padding: 5px;
-  color:white;
-}
-
-.our-service__text p {
-  text-align: center;
-  margin: 50px auto;
-  letter-spacing: 1px;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 30px;
-}
-
-button {
-  padding: 10px;
-  border-radius: 25px;
-  background-color: blueviolet;
-  color: white;
-  border: none;
+.main-section p {
   font-size: 1rem;
 }
-
-button:hover {
-  background-color: orange;
-  cursor: pointer;
+.bitcoinman-img{
+  display: flex;
+  margin: 50px auto 50px auto;
+  width:60%;
 }
 
 .top-coins {
@@ -114,7 +79,7 @@ button:hover {
 }
 
 .coin img {
-  width: 40%;
+  width: 43%;
 }
 
 .coin p {
@@ -131,8 +96,7 @@ button:hover {
   background-color: rgb(237, 154, 0);
   color: white;
   text-align: center;
-  padding: 2px;
-  font-size: 1.5rem;
+
 }
 
 .footer p {
