@@ -36,8 +36,6 @@ async function updatePrices() {
   document.getElementById('ethPrice').textContent = `$${eth.price_usd}`;
 }
 
-// Call the updatePrices function when the DOM is ready
-
 document.addEventListener('DOMContentLoaded', updatePrices);
 
 async function cryptoList() {
@@ -58,7 +56,7 @@ async function cryptoList() {
       cell3.textContent = item.percent_change_24h;
     });
 
-    // Append the table to a specific element with id "table-container"
+    //table to a specific element with id "table-container"
     let tableContainer = document.getElementById('table');
     tableContainer.innerHTML = ''; // Clear any existing content
     tableContainer.appendChild(table);
