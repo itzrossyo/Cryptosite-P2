@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   // Call the updatePrices function after fetching the initial prices
   updatePrices();
+
 });
 
 // Fetch the data and update the prices
@@ -38,6 +39,36 @@ async function updatePrices() {
 // Call the updatePrices function when the DOM is ready
 
 document.addEventListener('DOMContentLoaded', updatePrices);
+
+async function cryptoList() {
+  try {
+    const response = await fetch('https://api.coinlore.net/api/tickers/');
+    const data = await response.json();
+
+    // Create a table element
+    let table = document.createElement('table');
+
+    data.data.forEach(item => {
+      let row = table.insertRow();
+      let cell1 = row.insertCell(0);
+      let cell2 = row.insertCell(1);
+      let cell3 = row.insertCell(2);
+      cell1.textContent = item.name;
+      cell2.textContent = item.price_usd;
+      cell3.textContent = item.percent_change_24h;
+    });
+
+    // Append the table to a specific element with id "table-container"
+    let tableContainer = document.getElementById('table');
+    tableContainer.innerHTML = ''; // Clear any existing content
+    tableContainer.appendChild(table);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+cryptoList();
+
 
 
 // open and close menu for mobile
@@ -117,9 +148,3 @@ function getResponse(input) {
     return "I'm sorry, I didn't understand your message.";
   }
 }
-
-
-
-
-//bot respones
-
