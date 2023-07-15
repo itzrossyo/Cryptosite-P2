@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   const eth = data.data.find(crypto => crypto.symbol === 'ETH');
   ethPrice = eth.price_usd;
 
-  // Call the updatePrices function after fetching the initial prices
+  // Call the updatePrices function after fetching prices
   updatePrices();
 
 });
@@ -58,7 +58,7 @@ async function cryptoList() {
 
     //table to a specific element with id "table-container"
     let tableContainer = document.getElementById('table');
-    tableContainer.innerHTML = ''; // Clear any existing content
+    tableContainer.innerHTML = ''; 
     tableContainer.appendChild(table);
   } catch (error) {
     console.error('Error:', error);
