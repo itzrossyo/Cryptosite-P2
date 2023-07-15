@@ -60,33 +60,26 @@ nav .btn {
     border-radius: 20px;
 }
 
-.btn-signup {
-    position: absolute;
-    bottom: 25%;
-    left: 3%;
+.btn-container {
+    display: flex;
     text-align: center;
-    width: 120px;
-    padding: 5px;
-    font-size: 1.5rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: orange;
-    margin: 0 auto;
+    margin: 150px auto;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn-info {
-    position: absolute;
-    bottom: 25%;
-    left: 15%;
-    text-align: center;
-    width: 136px;
+.btn-info,
+.btn-signup {
+    width: 125px;
     padding: 5px;
     font-size: 1.5rem;
     border: 1px solid black;
     border-radius: 10px;
     background-color: orange;
-    margin: 0 auto;
 }
+
 
 .btn-signup:hover {
     border: 1px solid orange;
@@ -180,7 +173,7 @@ nav .btn {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    margin-top: 30%;
+    margin-top: 20%;
     padding-bottom: 50px;
 }
 
@@ -206,11 +199,8 @@ nav .btn {
     text-align: center;
     margin: 0 auto;
     font-size: 1.5rem;
-    position: absolute;
-    top: 76%;
-    left: 30%;
-    right: 30%;
     color: orange;
+
 }
 
 
@@ -316,15 +306,10 @@ nav .btn {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
-        margin-top: 63%;
+        margin-top: 15%;
         padding-bottom: 50px;
     }
 
-    .hotest-coin {
-        top: 70%;
-        left: 30%;
-        right: 30%;
-    }
 
 }
 
@@ -376,13 +361,8 @@ nav .btn {
         margin-left: 20px;
     }
 
-    .hotest-coin {
-        top: 60%;
-        left: 30%;
-        right: 30%;
-        font-size: 1.5rem;
-        color: orange;
-    }
+
+
 }
 
 /* mobile responsive END */
@@ -394,7 +374,7 @@ nav .btn {
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
         margin-left: 20px;
-        margin-top: 43%;
+        margin-top: 10%;
     }
 }
 
