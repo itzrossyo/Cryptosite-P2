@@ -1,27 +1,20 @@
-let btcPrice;
-let dogePrice;
-let ethPrice;
-
-window.addEventListener('DOMContentLoaded', async () => {
-  const response = await fetch('https://api.coinlore.net/api/tickers/');
-  const data = await response.json();
-
-  const btc = data.data.find(crypto => crypto.symbol === 'BTC');
-  btcPrice = btc.price_usd;
-
-  const doge = data.data.find(crypto => crypto.symbol === 'DOGE');
-  dogePrice = doge.price_usd;
-
-  const eth = data.data.find(crypto => crypto.symbol === 'ETH');
-  ethPrice = eth.price_usd;
-
-  // Call the updatePrices function after fetching prices
-  updatePrices();
-
-});
 
 // Fetch the data and update the prices
-
+url()
+ function url(){
+  
+  const url = window.location.href;
+  if(url === "http://127.0.0.1:5500/cryptolatestprice.html"){
+    cryptoList()
+    console.log("on cryptolatestprices")
+  }else('');{
+  } if(url === "http://127.0.0.1:5500/index.html"){
+    updatePrices()
+    console.log("on the home page")
+  }
+  
+}
+ 
 async function updatePrices() {
   const response = await fetch('https://api.coinlore.net/api/tickers/');
   const data = await response.json();
@@ -34,11 +27,9 @@ async function updatePrices() {
 
   const eth = data.data.find(crypto => crypto.symbol === 'ETH');
   document.querySelector('#ethPrice').textContent = `$${eth.price_usd}`;
+
+  
 }
-
-document.addEventListener('DOMContentLoaded', updatePrices);
-
-
 
 async function cryptoList() {
     const response = await fetch('https://api.coinlore.net/api/tickers/');
@@ -62,8 +53,6 @@ async function cryptoList() {
     tableContainer.appendChild(table);
 
 }
-cryptoList()
-
 
 
 
