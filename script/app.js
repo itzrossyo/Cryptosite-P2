@@ -1,21 +1,25 @@
 
-// Fetch the data and update the prices
+const cryptoCurrencyPage = "https://itzrossyo.github.io/cryptosite-p2/cryptolatestprice.html";
+const homePage = "http://127.0.0.1:5500/index.html";
+const botImg = document.querySelector(".bot-img");
+const botChatBox = document.querySelector(".bot-chatbot");
+const userInput = document.querySelector(".user-input");
+const sendMsg = document.querySelector(".send-btn");
+const messageBox = document.querySelector(".message-box");
+
 url()
- function url(){
-  
+ function url(){     //url watch for appending html for each api
   const url = window.location.href;
-  if(url === "http://127.0.0.1:5500/cryptolatestprice.html"){
+  if(url === cryptoCurrencyPage ){
     cryptoList()
     console.log("on cryptolatestprices")
   }else('');{
-  } if(url === "http://127.0.0.1:5500/index.html"){
+  } if(url === homePage){
     updatePrices()
     console.log("on the home page")
   }
-  
 }
- 
-async function updatePrices() {
+async function updatePrices() { // Fetch the data and update the prices for hot coins
   const response = await fetch('https://api.coinlore.net/api/tickers/');
   const data = await response.json();
 
@@ -27,17 +31,13 @@ async function updatePrices() {
 
   const eth = data.data.find(crypto => crypto.symbol === 'ETH');
   document.querySelector('#ethPrice').textContent = `$${eth.price_usd}`;
-
-  
 }
-
-async function cryptoList() {
+async function cryptoList() { //call api for grabbing all cyrpto
     const response = await fetch('https://api.coinlore.net/api/tickers/');
     const data = await response.json();
 
-    // Create a table element
-
-    let table = document.createElement('table');
+   
+    let table = document.createElement('table'); // Create a table element
     data.data.forEach(item => {
       let row = table.insertRow();
       let cell1 = row.insertCell(0);
@@ -48,18 +48,11 @@ async function cryptoList() {
       cell3.textContent = item.percent_change_24h;
     });
 
-    let tableContainer = document.querySelector('#table');
+    let tableContainer = document.querySelector('#table'); //display data to table
     tableContainer.innerHTML = ''; 
     tableContainer.appendChild(table);
-
 }
-
-
-
-// open and close menu for mobile
-
-
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { // open and close menu for mobile
   const toggleBtn = document.querySelector(".toggle_btn");
   const dropDownMenu = document.querySelector(".dropdown-menu");
 
@@ -77,38 +70,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-//open and close chat bot
-
-const botImg = document.querySelector(".bot-img");
-const botChatBox = document.querySelector(".bot-chatbot");
-
-botImg.addEventListener("click", function() {
+botImg.addEventListener("click", function() { //open chat bot
   botChatBox.style.display = "block";
 });
-
-document.addEventListener("click", function(e) {
+document.addEventListener("click", function(e) { //close chat bot
   if (!botImg.contains(e.target) && !botChatBox.contains(e.target)) {
     botChatBox.style.display = "none";
   }
 });
-
-//start of chat bot 
-
-const userInput = document.querySelector(".user-input");
-const sendMsg = document.querySelector(".send-btn");
-const messageBox = document.querySelector(".message-box");
-
-sendMsg.addEventListener("click", function () {
+sendMsg.addEventListener("click", function () { //user input for chat bot
   const inputText = userInput.value;
   const response = getResponse(inputText);
   messageBox.innerHTML += `<p>You: ${inputText}</p>`;
   messageBox.innerHTML += `<p>GenBot: ${response}</p>`;
   userInput.value = "";
 });
-
-// bot logic
-function getResponse(input) {
+function getResponse(input) {  //chat bot logic
   if (input.toLowerCase().includes("hello")) {
     return "Hello! How can I assist you today?";
   } else if (input.toLowerCase().includes("help")) {
