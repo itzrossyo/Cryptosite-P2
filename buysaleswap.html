@@ -5,82 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3ff087e965.js" crossorigin="anonymous"></script>
+    <title>Buy and Sale</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./lib/images/favicon.ico" />
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">CryptoSiteV2</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cryptolatestprice.html">Cyrpto Latest Price</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="buysaleswap.html">Buy Sale Swap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="cryptolatestprice.html">Crypto Latest Price</a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="buysaleswap.html">Buy Sale Crypto</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+            <a href="#" class="btn">Sign Up</a>
+        </nav>
+
+        <i class="hamburger fa-solid fa-bars fa-2x toggle_btn"></i>
+
+        <div class="dropdown-menu">
+            <ul>
+                <li>
+                    <a aria-label="Go to home page" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a aria-label="Go to Product page" href="cryptolatestprice.html">crypto Latest Price</a>
+                </li>
+                <li>
+                    <a aria-label="Go to About us page" href="about-us.html">Buy Sale Swap </a>
+                </li>
+                <li>
+                    <a aria-label="Go to About us page" href="about-us.html">about us</a>
+                </li>
+                <li>
+                    <a aria-label="Go to contact page" href="contact-us.html">Login </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <form id="coinForm">
+            <div class="form-raido">
+                <input type="radio" name="action" id="buyAction" value="buy" checked>
+                <label for="buyAction">Buy Coins</label>
+                <input type="radio" name="action" id="sellAction" value="sell">
+                <label for="sellAction">Sell Coins</label>
+            </div>
+
+            <div class="form-section" id="buySection">
+                <h2>Buy Coins</h2>
+                <label for="coinSelectionBuy">Select Coin to Buy:</label>
+                <select id="coinSelectionBuy">
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="litecoin">Litecoin</option>
+                    <!-- Add more coins as needed -->
+                </select>
+
+                <p>Cost per Coin: $1000</p>
+
+                <label for="buyAmount">Enter Amount of Coins to Buy:</label>
+                <input type="number" id="buyAmount" min="1" required>
+
+                <p>Total Cost: <span id="totalCost">0</span></p>
+            </div>
+
+            <div class="form-section" id="sellSection">
+                <h2>Sell Coins</h2>
+                <label for="coinSelectionSell">Select Coin to Sell:</label>
+                <select id="coinSelectionSell">
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="litecoin">Litecoin</option>
+                    <!-- Add more coins as needed -->
+                </select>
+
+                <label for="sellAmount">Enter Amount of Coins to Sell:</label>
+                <input type="number" id="sellAmount" min="1" required disabled>
+
+                <p>Price for Selling <span id="sellPrice">0</span> Coins: $900 each</p>
+            </div>
+            <div class="form-btn">
+                <button type="submit">Confirm</button>
+                <button type="button" onclick="clearForm()">Clear All</button>
+            </div>
+        </form>
+
+        <div class="bot-container">
+            <div class="bot-box">
+                <i class="bot-img fa-solid fa-robot fa-2xl"></i>
+                <div class="bot-chatbot">
+                    <div class="bot-chat">
+                        <p class="bot-title">GenBot</p>
+                        <p class="message-box"><span class="message-box"></span></p>
+                        <input class="user-input" type="text" id="user-input">
+                        <button class=" send-btn"><i class="fa-solid fa-share" style="color: #000000;"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <div class="main-section">
-        <h1>Next Gen Grypto</h1>
-        <p>Welcome to the world of next-generation crypto! Our website is your gateway to the future of
-            finance, where blockchain technology revolutionizes the way we interact with currencies.</p>
+
     </div>
-    <img class="bitcoinman-img" src="./lib/images/blockchain.png" alt="">
-    <p>How it works</p>
-    <ul>
-        <li></li>
-    </ul>
-
-    <div class="top-coins">
-        <div class="coin">
-            <img src="./lib/images/bitcoin.png" alt="bitcoin" />
-            <div>
-                <p id="btcPrice">Loading...</p>
-                <p>Bitcoin</p>
-            </div>
-        </div>
-
-        <div class="coin">
-            <img src="./lib/images/dogecoin.png" alt="doge Coin" />
-            <div>
-                <p id="dogePrice">Loading...</p>
-                <p>DodgeCoin</p>
-            </div>
-        </div>
-
-        <div class="coin">
-            <img src="./lib/images/etheram.png" alt="bitcoin" />
-            <div>
-                <p id="ethPrice">Loading...</p>
-                <p>Etherum</p>
-            </div>
-        </div>
     </div>
     <div class="footer">
-        <p>Copyright 2023 vitecrypto</p>
+        <footer>Copyright nextgencrypto</footer>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
 <script src="./script/app.js"></script>
+<script src="./script/buyandsale.js"></script>
 
 </html>

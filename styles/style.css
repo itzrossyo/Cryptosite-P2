@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,14 +21,17 @@ a {
     color: white;
 }
 
+.active {
+    text-decoration: underline;
+    color: white;
+}
 
 .container {
-    background: linear-gradient(355deg, rgb(28, 19, 50) 25%, rgb(12, 9, 32) 80%);
+    background: linear-gradient(355deg, rgb(59, 45, 95) 25%, rgb(12, 9, 32) 80%);
     background-image: url(../lib/images/blocks.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(40, 10, 100);
+    background-repeat: repeat;
     color: white;
     width: 100%;
     height: 100vh;
@@ -35,7 +39,7 @@ a {
 
 nav {
     width: 100%;
-    padding: 20px;
+    padding: 4px;
     display: flex;
     align-items: center;
 }
@@ -173,8 +177,7 @@ nav .btn {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    margin-top: 20%;
-    padding-bottom: 50px;
+    padding-bottom: 38px;
 }
 
 .coins {
@@ -266,27 +269,93 @@ nav .btn {
 }
 
 /* cryptopage */
+#main-title-cryptopage {
+    margin-top: 12%;
+    font-size: 88px;
+    margin-bottom: 15px;
 
-table.GeneratedTable {
-    width: 100%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #ffcc00;
-    border-style: solid;
-    color: #000000;
 }
 
-table.GeneratedTable td,
-table.GeneratedTable th {
-    border-width: 2px;
-    border-color: #ffcc00;
-    border-style: solid;
+
+#main-title-cryptopage>span {
+    color: orange;
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 40%;
+}
+
+/* Styles for the arrow icon */
+.arrow {
+    width: 100px;
+    height: 100px;
+    border: solid orange;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
     padding: 3px;
+
 }
 
-table.GeneratedTable thead {
-    background-color: #ffcc00;
+/* Rotation and Bouncing animation */
+.down {
+    transform: rotate(45deg);
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    40% {
+        transform: translateY(-30px) rotate(45deg);
+    }
+
+    60% {
+        transform: translateY(-15px) rotate(45deg);
+    }
+}
+
+.tableheader {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 37%;
+    color: orange;
+    font-size: 22px;
+}
+
+
+
+table {
+    display: flex;
+    justify-content: center;
+    border-collapse: separate;
+    border-spacing: 41px 15px;
+    margin-top: -90px;
+    font-size: 22px;
+
+}
+
+td {
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+
+tr:hover {
+    color: rgb(255, 145, 0)
 }
 
 .footer {
@@ -307,6 +376,49 @@ table.GeneratedTable thead {
     width: 100%;
     background-color: rgb(237, 154, 0);
     color: white;
+}
+
+
+/* buy and sale page */
+
+
+#coinForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    left: 360px;
+    top: 216px;
+
+}
+
+#coinForm h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.form-raido {
+    display: flex;
+    margin-top: 15%;
+    transform: scale(1.5);
+    gap: 5px
+}
+
+
+
+#coinFrom input {
+    display: flex;
+    font-size: 22px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 5px
 }
 
 /* tablet responsive start*/
@@ -334,6 +446,9 @@ table.GeneratedTable thead {
         padding-bottom: 50px;
     }
 
+    .arrow {
+        display: none;
+    }
 
 }
 
@@ -385,21 +500,32 @@ table.GeneratedTable thead {
         margin-left: 20px;
     }
 
-
-
-}
-
-/* mobile responsive END */
-
-/* laptop responsive start */
-@media screen and (min-width:1024px) {
-
-    .grid-container {
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-        margin-left: 20px;
-        margin-top: 10%;
+    .tableheader {
+        display: none;
     }
-}
 
-/* laptop responsive END */
+    .arrow {
+        display: none;
+    }
+
+    table {
+
+        margin-top: 165px;
+        margin-left: 73px
+    }
+
+
+    /* mobile responsive END */
+
+    /* laptop responsive start */
+    @media screen and (min-width:1024px) {
+
+        .grid-container {
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+            margin-left: 20px;
+
+        }
+    }
+
+    /* laptop responsive END */
