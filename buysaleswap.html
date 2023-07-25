@@ -62,18 +62,17 @@
                 <input type="radio" name="action" id="sellAction" value="sell">
                 <label for="sellAction">Sell Coins</label>
             </div>
+            <div id="wallet">
 
+            </div>
             <div class="form-section" id="buySection">
                 <h2>Buy Coins</h2>
                 <label for="coinSelectionBuy">Select Coin to Buy:</label>
-                <select id="coinSelectionBuy">
-                    <option value="bitcoin">Bitcoin</option>
-                    <option value="ethereum">Ethereum</option>
-                    <option value="litecoin">Litecoin</option>
-                    <!-- Add more coins as needed -->
+                <select id="coinSelection">
+
                 </select>
 
-                <p>Cost per Coin: $1000</p>
+                <p id="costpercoin"></p>
 
                 <label for="buyAmount">Enter Amount of Coins to Buy:</label>
                 <input type="number" id="buyAmount" min="1" required>
@@ -83,21 +82,15 @@
 
             <div class="form-section" id="sellSection">
                 <h2>Sell Coins</h2>
-                <label for="coinSelectionSell">Select Coin to Sell:</label>
-                <select id="coinSelectionSell">
-                    <option value="bitcoin">Bitcoin</option>
-                    <option value="ethereum">Ethereum</option>
-                    <option value="litecoin">Litecoin</option>
-                    <!-- Add more coins as needed -->
-                </select>
+
 
                 <label for="sellAmount">Enter Amount of Coins to Sell:</label>
                 <input type="number" id="sellAmount" min="1" required disabled>
 
-                <p>Price for Selling <span id="sellPrice">0</span> Coins: $900 each</p>
+                <p><span id="sellPrice">0</span></p>
             </div>
             <div class="form-btn">
-                <button type="submit">Confirm</button>
+                <button id="confirm" type="button">Confirm</button>
                 <button type="button" onclick="clearForm()">Clear All</button>
             </div>
         </form>

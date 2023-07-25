@@ -6,7 +6,6 @@ const botChatBox = document.querySelector(".bot-chatbot");
 const userInput = document.querySelector(".user-input");
 const sendMsg = document.querySelector(".send-btn");
 const messageBox = document.querySelector(".message-box");
-
 url()
  function url(){     //url watch for appending html for each api
   const url = window.location.href;

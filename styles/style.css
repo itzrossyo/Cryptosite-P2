@@ -406,7 +406,9 @@ tr:hover {
     gap: 5px
 }
 
-
+#coinSelection {
+    overflow: hidden;
+}
 
 #coinFrom input {
     display: flex;
@@ -527,5 +529,4 @@ tr:hover {
 
         }
     }
-
-    /* laptop responsive END */
+}
