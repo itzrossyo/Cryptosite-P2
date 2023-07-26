@@ -2,80 +2,95 @@ const apiEndpoint = 'https://api.coinlore.net/api/tickers/';
 let data = [];
 let totalPurchases = {};
 let amountToBuy = 0; // Global variable for amount to buy
+const signUp = document.getElementById('signup-btn'); // Replace 'signUpButton' with the actual ID of your "Sign Up" button
+const signUpLogin = 'Sign Up'; 
+const form = document.querySelector('#coinForm')
+const signupH1 = document.querySelector('#signuph1')
+
+
+
+if (signUp.textContent === signUpLogin) {//check to see if user is logged in
+ 
+  form.style.display = "none";
+} else {
+  form.style.display = "block";
+  signupH1.style.display = "none";
+}
+
 
 async function cryptoList() {
-  const response = await fetch(apiEndpoint);
-  const data = await response.json();
-  return data.data;
+    const response = await fetch(apiEndpoint);
+    const data = await response.json();
+    return data.data;
 }
 
 function populateSelectOptions(data) {
-  const selectElement = document.getElementById('coinSelection');
-  selectElement.innerHTML = '';
+    const selectElement = document.getElementById('coinSelection');
+    selectElement.innerHTML = '';
 
-  data.forEach((crypto) => {
-    const option = document.createElement('option');
-    option.value = crypto.id;
-    option.textContent = crypto.symbol;
-    selectElement.appendChild(option);
-  });
+    data.forEach((crypto) => {
+        const option = document.createElement('option');
+        option.value = crypto.id;
+        option.textContent = crypto.symbol;
+        selectElement.appendChild(option);
+    });
 }
 
 function updateTotalCost() {
-  amountToBuy = parseFloat(document.getElementById("buyAmount").value); // Update global variable
-  const selectedCryptoId = document.getElementById("coinSelection").value;
-  const selectedCrypto = data.find(crypto => crypto.id === selectedCryptoId);
+    amountToBuy = parseFloat(document.getElementById("buyAmount").value); // Update global variable
+    const selectedCryptoId = document.getElementById("coinSelection").value;
+    const selectedCrypto = data.find(crypto => crypto.id === selectedCryptoId);
 
-  if (selectedCrypto) {
-    const costPerCoin = parseFloat(selectedCrypto.price_usd);
-    const totalCost = amountToBuy * costPerCoin;
-    document.getElementById("totalCost").textContent = `$${totalCost.toFixed(2)}`;
-  }
+    if (selectedCrypto) {
+        const costPerCoin = parseFloat(selectedCrypto.price_usd);
+        const totalCost = amountToBuy * costPerCoin;
+        document.getElementById("totalCost").textContent = `$${totalCost.toFixed(2)}`;
+    }
 }
 
 function updateSellPrice() {
-  const amountToSell = parseFloat(document.getElementById("sellAmount").value);
-  const selectedCryptoId = document.getElementById("coinSelection").value;
-  const selectedCrypto = data.find(crypto => crypto.id === selectedCryptoId);
+    const amountToSell = parseFloat(document.getElementById("sellAmount").value);
+    const selectedCryptoId = document.getElementById("coinSelection").value;
+    const selectedCrypto = data.find(crypto => crypto.id === selectedCryptoId);
 
-  if (selectedCrypto) {
-    const cryptoSymbol = selectedCrypto.symbol;
+    if (selectedCrypto) {
+        const cryptoSymbol = selectedCrypto.symbol;
 
-    if (totalPurchases[cryptoSymbol]) {
-      const costPerCoin = parseFloat(selectedCrypto.price_usd);
-      const totalCost = amountToSell * costPerCoin;
+        if (totalPurchases[cryptoSymbol]) {
+            const costPerCoin = parseFloat(selectedCrypto.price_usd);
+            const totalCost = amountToSell * costPerCoin;
 
-      if (totalPurchases[cryptoSymbol] >= amountToSell) {
-        document.getElementById("sellPrice").textContent = `$${totalCost.toFixed(2)}`;
-      } else {
-        document.getElementById("sellPrice").textContent = "Insufficient balance in the wallet.";
-      }
+            if (totalPurchases[cryptoSymbol] >= amountToSell) {
+                document.getElementById("sellPrice").textContent = `$${totalCost.toFixed(2)}`;
+            } else {
+                document.getElementById("sellPrice").textContent = "Insufficient balance in the wallet.";
+            }
+        } else {
+            document.getElementById("sellPrice").textContent = "You have no purchases for this cryptocurrency.";
+        }
     } else {
-      document.getElementById("sellPrice").textContent = "You have no purchases for this cryptocurrency.";
+        document.getElementById("sellPrice").textContent = "Please select a cryptocurrency.";
     }
-  } else {
-    document.getElementById("sellPrice").textContent = "Please select a cryptocurrency.";
-  }
 }
 
 function updateWalletText() {
-  const walletText = Object.entries(totalPurchases).map(([symbol, amount]) => `${amount} ${symbol}`).join(', ');
-  const wallet = document.querySelector('#wallet');
-  wallet.textContent = `You have bought ${walletText}.`;
+    const walletText = Object.entries(totalPurchases).map(([symbol, amount]) => `${amount} ${symbol}`).join(', ');
+    const wallet = document.querySelector('#wallet');
+    wallet.textContent = `You have bought ${walletText}.`;
 }
 
 async function initialize() {
-  data = await cryptoList();
-  populateSelectOptions(data);
-  updateSellPrice(); // Set initial sell price
+    data = await cryptoList();
+    populateSelectOptions(data);
+    updateSellPrice(); // Set initial sell price
 }
 
 initialize();
 
 function clearForm() {
-  document.getElementById("coinForm").reset();
-  document.getElementById("totalCost").textContent = 0;
-  document.getElementById("sellPrice").textContent = 0;
+    document.getElementById("coinForm").reset();
+    document.getElementById("totalCost").textContent = 0;
+    document.getElementById("sellPrice").textContent = 0;
 }
 
 

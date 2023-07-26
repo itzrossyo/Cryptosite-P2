@@ -381,6 +381,11 @@ tr:hover {
 
 /* buy and sale page */
 
+#signuph1 {
+    text-align: center;
+    margin-top: 182px;
+    margin-right: 485px;
+}
 
 #coinForm {
     display: flex;
@@ -388,10 +393,6 @@ tr:hover {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    position: absolute;
-    left: 360px;
-    top: 216px;
-
 }
 
 #coinForm h2 {
@@ -415,12 +416,23 @@ tr:hover {
     font-size: 22px;
 }
 
+.form-btn {
+    display: flex;
+    justify-content: center;
+}
+
+
 .form-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
     gap: 5px
+}
+
+#wallet {
+    display: flex;
+    justify-content: left;
 }
 
 /* tablet responsive start*/
@@ -450,6 +462,12 @@ tr:hover {
 
     .arrow {
         display: none;
+    }
+
+    #signuph1 {
+        text-align: center;
+        margin-top: 182px;
+        margin-right: 288px;
     }
 
 }
@@ -516,6 +534,11 @@ tr:hover {
         margin-left: 73px
     }
 
+    #signuph1 {
+        text-align: center;
+        margin-top: 182px;
+        margin-right: 14px;
+    }
 
     /* mobile responsive END */
 

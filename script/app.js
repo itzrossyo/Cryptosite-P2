@@ -1,23 +1,10 @@
 
-const cryptoCurrencyPage = "http://127.0.0.1:5500/cryptolatestprice.html";
-const homePage = "http://127.0.0.1:5500/index.html";
 const botImg = document.querySelector(".bot-img");
 const botChatBox = document.querySelector(".bot-chatbot");
 const userInput = document.querySelector(".user-input");
 const sendMsg = document.querySelector(".send-btn");
 const messageBox = document.querySelector(".message-box");
-url()
- function url(){     //url watch for appending html for each api
-  const url = window.location.href;
-  if(url === cryptoCurrencyPage ){
-    cryptoList()
-    console.log("on cryptolatestprices")
-  }else('');{
-  } if(url === homePage){
-    updatePrices()
-    console.log("on the home page")
-  }
-}
+
 async function updatePrices() { // Fetch the data and update the prices for hot coins
   const response = await fetch('https://api.coinlore.net/api/tickers/');
   const data = await response.json();
@@ -31,28 +18,7 @@ async function updatePrices() { // Fetch the data and update the prices for hot 
   const eth = data.data.find(crypto => crypto.symbol === 'ETH');
   document.querySelector('#ethPrice').textContent = `$${eth.price_usd}`;
 }
-async function cryptoList() { //call api for grabbing all cyrpto
-    const response = await fetch('https://api.coinlore.net/api/tickers/');
-    const data = await response.json();
 
-   
-    let table = document.createElement('table'); // Create a table element
-    data.data.forEach(item => {
-      let row = table.insertRow();
-      let cell1 = row.insertCell(0);
-      let cell2 = row.insertCell(1);
-      let cell3 = row.insertCell(2);
-      let cell4 = row.insertCell(3);
-      cell1.textContent = item.name;
-      cell2.textContent = item.price_usd;
-      cell3.textContent = item.percent_change_24h;
-      cell4.textContent = item.rank;
-    });
-
-    let tableContainer = document.querySelector('#table'); //display data to table
-    tableContainer.innerHTML = ''; 
-    tableContainer.appendChild(table);
-}
 document.addEventListener("DOMContentLoaded", function () { // open and close menu for mobile
   const toggleBtn = document.querySelector(".toggle_btn");
   const dropDownMenu = document.querySelector(".dropdown-menu");
