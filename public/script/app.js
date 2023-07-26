@@ -5,19 +5,6 @@ const userInput = document.querySelector(".user-input");
 const sendMsg = document.querySelector(".send-btn");
 const messageBox = document.querySelector(".message-box");
 
-async function updatePrices() { // Fetch the data and update the prices for hot coins
-  const response = await fetch('https://api.coinlore.net/api/tickers/');
-  const data = await response.json();
-
-  const btc = data.data.find(crypto => crypto.symbol === 'BTC');
-  document.querySelector('#btcPrice').textContent = `$${btc.price_usd}`;
-
-  const doge = data.data.find(crypto => crypto.symbol === 'DOGE');
-  document.querySelector('#dogePrice').textContent = `$${doge.price_usd}`;
-
-  const eth = data.data.find(crypto => crypto.symbol === 'ETH');
-  document.querySelector('#ethPrice').textContent = `$${eth.price_usd}`;
-}
 
 document.addEventListener("DOMContentLoaded", function () { // open and close menu for mobile
   const toggleBtn = document.querySelector(".toggle_btn");
