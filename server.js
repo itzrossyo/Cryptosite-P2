@@ -1,27 +1,30 @@
-//import 
-require('dotenv').config()
-const express = require('express')
-const pagesRoutes = require('./routes/wallet')
-const app = express()
-const path = require('path')
+//import
+require('dotenv').config();
+const express = require('express');
+const pagesRoutes = require('./routes/wallet');
+const app = express();
+const path = require('path');
+const { connectToDb, getDb } = require('./db');
 
+// db connection
+let db;
+
+connectToDb((err) => {
+  if (!err) {
+    app.listen(process.env.PORT, () => {
+      console.log('listening on port ', process.env.PORT);
+    });
+    db = getDb();
+  }
+});
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
+app.use((req, res, next) => {
+  console.log(req.path, req.method);
+  next();
+});
 
-app.use((req ,res,next) =>{
-    console.log(req.path, req.method)
-    next()
-})
 //routes
- 
-app.use(pagesRoutes)
-
-//end of routes
-
-
-app.listen(process.env.PORT,()=>{
-    console.log('listening on port ',process.env.PORT)
-})
-
+app.use(pagesRoutes);
