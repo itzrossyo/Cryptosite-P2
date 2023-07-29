@@ -2,7 +2,7 @@
   "name": "cryptosite-p2",
   "version": "1.0.0",
   "description": "cryptosite",
-  "main": "index.ejs",
+  "main": "views/index.ejs",
   "directories": {
     "lib": "lib"
   },
