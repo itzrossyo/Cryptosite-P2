@@ -1,7 +1,7 @@
 //import 
 require('dotenv').config()
 const express = require('express')
-const wallet = require('./routes/wallet')
+const pagesRoutes = require('./routes/wallet')
 const app = express()
 const path = require('path')
 
@@ -16,7 +16,7 @@ app.use((req ,res,next) =>{
 })
 //routes
  
-app.use(wallet)
+app.use(pagesRoutes)
 
 //end of routes
 
