@@ -135,6 +135,10 @@ The website will be designed with accessibility in mind, ensuring that all users
 - HTML5
 - CSS3
 - JavaScript
+- node.js
+- express
+- ejs
+- heroku
 
 ## Deployment & Local Development
 
