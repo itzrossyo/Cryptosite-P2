@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="https://kit.fontawesome.com/3ff087e965.js" crossorigin="anonymous"></script>
     <title>CryptoSitev2</title>
     <link rel="shortcut icon" type="image/x-icon" href="./lib/images/favicon.ico" />
@@ -16,19 +16,19 @@
         <nav>
             <ul>
                 <li>
-                    <a class="nav-link active" aria-current="page" href="/index">Home</a>
+                    <a class="nav-link " aria-current="page" href="/pages/index.html">Home</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="/cryptopricelist">Crypto Latest Price</a>
+                    <a class=" nav-link active" id="current-page" href="/cryptopricelist">Crypto Latest Price</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="/buyandsell">Buy Sale Crypto</a>
+                    <a class="nav-link" href="/buyandsell">Buy Sale Crypto </a>
                 </li>
                 <li>
                     <a class="nav-link" href="#">About us</a>
                 </li>
             </ul>
-            <a href="/register" class="btn" id="signup-btn">Sign Up</a>
+            <a href="/register" class="btn">Sign Up</a>
         </nav>
 
         <i class="hamburger fa-solid fa-bars fa-2x toggle_btn"></i>
@@ -36,13 +36,13 @@
         <div class="dropdown-menu">
             <ul>
                 <li>
-                    <a aria-label="Go to home page" href="/index">Home</a>
+                    <a aria-label="Go to home page" href="/">Home</a>
                 </li>
                 <li>
                     <a aria-label="Go to Product page" href="/cryptopricelist">crypto Latest Price</a>
                 </li>
                 <li>
-                    <a aria-label="Go to About us page" href="/buysell">Buy Sale Crypto</a>
+                    <a aria-label="Go to About us page" href="/buyandsell">Buy Sale Crypto </a>
                 </li>
                 <li>
                     <a aria-label="Go to About us page" href="about-us.html">about us</a>
@@ -53,40 +53,20 @@
             </ul>
 
         </div>
-        <div class="content">
-            <h1>Next Gen <span>Crypto</span></h1>
-            <p>next gen crypto bot trading with the newst and best features.<br>
-                dive into the world of crypto and sit back<br> while we do everything for you.
-            </p>
+        <h1 id="main-title-cryptopage">Crypto <span> Prices</span></h1>
+        <div class="tableheader " id="tableheader">
+            <p>Coin</p>
+            <p>Latest Price</p>
+            <p>24hr Price</p>
+            <p>Rank</p>
         </div>
-        <div class="btn-container">
-            <a href="#" class="btn-signup">Sign Up </a>
-            <a href="#" class="btn-info">More Info </a>
-        </div>
+        <div class="arrow-down">
+            <p><a class="arrow bounce" href="#tableheader"></a></p>
 
-
-        <div class="grid-container">
-            <div class="grid-item">
-                <div class="coins">
-                    <img src="./lib/images/bitcoin.png" alt="btc">
-                    <p id="btcPrice"></p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="coins">
-                    <img src="./lib/images/dogecoin.png" alt="dogecoin">
-                    <p id="dogePrice"></p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="coins">
-                    <img src="./lib/images/etheram.png" alt="">
-                    <p id="ethPrice"></p>
-                </div>
-            </div>
 
         </div>
 
+        <p id="table"></p>
         <div class="bot-container">
             <div class="bot-box">
                 <i class="bot-img fa-solid fa-robot fa-2xl"></i>
@@ -102,14 +82,11 @@
         </div>
 
 
-    </div>
-    </div>
-    <div class="footer">
-        <footer>Copyright nextgencrypto</footer>
-    </div>
-    <script src="./script/app.js"></script>
-    <script src="./script/hotcoins.js"></script>
+        <div class="footer">
+            <footer>Copyright nextgencrypto</footer>
+        </div>
 </body>
-
+<script src="../lib/script/app.js"></script>
+<script src="../lib/script/cryptolatestprice.js"></script>
 
 </html>
