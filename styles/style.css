@@ -470,16 +470,19 @@ border-radius:20px;
         padding-bottom: 50px;
     }
 
-    .arrow {
-        display: none;
-    }
+
 
     #signuph1 {
         text-align: center;
         margin-top: 182px;
         margin-right: 288px;
     }
-
+nav{
+    font-size: 15px;
+}
+    tr:hover {
+        display: none;
+    }
 }
 
 /* tablet responsive END*/
