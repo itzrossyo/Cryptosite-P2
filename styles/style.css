@@ -393,6 +393,8 @@ tr:hover {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+
+
 }
 
 #coinForm h2 {
@@ -401,10 +403,8 @@ tr:hover {
 }
 
 .form-raido {
-    display: flex;
-    margin-top: 15%;
-    transform: scale(1.5);
-    gap: 5px
+text-align: center;
+    margin-top: 50px ;
 }
 
 #coinSelection {
@@ -419,9 +419,15 @@ tr:hover {
 .form-btn {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    border-radius: 50px;
 }
 
-
+.confirm, .clear {
+border-radius:20px;
+    padding: 10px;
+    width:100px;
+}
 .form-section {
     display: flex;
     flex-direction: column;

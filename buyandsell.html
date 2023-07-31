@@ -3,121 +3,122 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/3ff087e965.js" crossorigin="anonymous"></script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="styles/style.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/3ff087e965.js"></script>
     <title>CryptoSitev2</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./lib/images/favicon.ico" />
+    <link href="./lib/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a class="nav-link " aria-current="page" href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="/cryptopricelist.html">Crypto Latest Price</a>
-                </li>
-                <li>
-                    <a class="nav-link active" href="/pages//buyandsell.html">Buy Sale Crypto</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-            </ul>
-            <a href="/register.html" class="btn" id="signup-btn">Sign Up</a>
-        </nav>
+<div class="container">
+    <nav>
+        <ul>
+            <li>
+                <a aria-current="page" class="nav-link " href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="cryptopricelist.html">Crypto Latest Price</a>
+            </li>
+            <li>
+                <a class="nav-link active" href="buyandsell.html">Buy Sale Crypto</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">About us</a>
+            </li>
+        </ul>
+        <a class="btn" href="register.html" id="signup-btn">Sign Up</a>
+    </nav>
 
-        <i class="hamburger fa-solid fa-bars fa-2x toggle_btn"></i>
+    <i class="hamburger fa-solid fa-bars fa-2x toggle_btn"></i>
 
-        <div class="dropdown-menu">
-            <ul>
-                <li>
-                    <a aria-label="Go to home page" href="/pages/index">Home</a>
-                </li>
-                <li>
-                    <a aria-label="Go to Product page" href="/pages/cryptopricelist">crypto Latest Price</a>
-                </li>
-                <li>
-                    <a aria-label="Go to About us page" href="/pagesbuyandsell">Buy Sale Swap </a>
-                </li>
-                <li>
-                    <a aria-label="Go to About us page" href="/pages/about-us.html">about us</a>
-                </li>
-                <li>
-                    <a aria-label="Go to contact page" href="/pages/signup.html">Login /sign Up </a>
-                </li>
-            </ul>
+    <div class="dropdown-menu">
+        <ul>
+            <li>
+                <a aria-label="Go to home page" href="/index.html">Home</a>
+            </li>
+            <li>
+                <a aria-label="Go to Product page" href="cryptopricelist.html">crypto Latest Price</a>
+            </li>
+            <li>
+                <a aria-label="Go to About us page" href="buyandsell.html">Buy Sale Swap </a>
+            </li>
+            <li>
+                <a aria-label="Go to About us page" href="about-us.html">about us</a>
+            </li>
+            <li>
+                <a aria-label="Go to contact page" href="register.html">Login /sign Up </a>
+            </li>
+        </ul>
 
+    </div>
+    <div id="wallet">
+
+    </div>
+    <h1 id="signuph1">Please sign up to use this function</h1>
+    <p></p>
+    <form id="coinForm">
+        <div class="form-raido">
+            <input checked id="buyAction" name="action" type="radio" value="buy">
+            <label for="buyAction">Buy Coins</label>
+            <input id="sellAction" name="action" type="radio" value="sell">
+            <label for="sellAction">Sell Coins</label>
         </div>
-        <div id="wallet">
 
+        <div class="form-section" id="buySection">
+            <h2>Buy Coins</h2>
+            <label for="coinSelectionBuy">Select Coin to Buy:</label>
+            <select id="coinSelection">
+
+            </select>
+
+            <p id="costpercoin"></p>
+
+            <label for="buyAmount">Enter Amount of Coins to Buy:</label>
+            <input id="buyAmount" min="1" required type="number">
+
+            <p>Total Cost: <span id="totalCost">0</span></p>
         </div>
-        <h1 id="signuph1">Please sign up to use this function</h1>
-        <p></p>
-        <form id="coinForm">
-            <div class="form-raido">
-                <input type="radio" name="action" id="buyAction" value="buy" checked>
-                <label for="buyAction">Buy Coins</label>
-                <input type="radio" name="action" id="sellAction" value="sell">
-                <label for="sellAction">Sell Coins</label>
-            </div>
 
-            <div class="form-section" id="buySection">
-                <h2>Buy Coins</h2>
-                <label for="coinSelectionBuy">Select Coin to Buy:</label>
-                <select id="coinSelection">
-
-                </select>
-
-                <p id="costpercoin"></p>
-
-                <label for="buyAmount">Enter Amount of Coins to Buy:</label>
-                <input type="number" id="buyAmount" min="1" required>
-
-                <p>Total Cost: <span id="totalCost">0</span></p>
-            </div>
-
-            <div class="form-section" id="sellSection">
-                <h2>Sell Coins</h2>
+        <div class="form-section" id="sellSection">
+            <h2>Sell Coins</h2>
 
 
-                <label for="sellAmount">Enter Amount of Coins to Sell:</label>
-                <input type="number" id="sellAmount" min="1" required disabled>
+            <label for="sellAmount">Enter Amount of Coins to Sell:</label>
+            <input disabled id="sellAmount" min="1" required type="number">
 
-                <p><span id="sellPrice">0</span></p>
-            </div>
-            <div class="form-btn">
-                <button id="confirm" type="button">Confirm</button>
-                <button type="button" onclick="clearForm()">Clear All</button>
-            </div>
-        </form>
+            <p><span id="sellPrice">0</span></p>
+        </div>
+        <div class="form-btn">
+            <button class ="confirm" id="confirm" type="button">Confirm</button>
+            <button class="clear" id="clear" onclick="clearForm()" type="button">Clear All</button>
+        </div>
+    </form>
 
-        <div class="bot-container">
-            <div class="bot-box">
-                <i class="bot-img fa-solid fa-robot fa-2xl"></i>
-                <div class="bot-chatbot">
-                    <div class="bot-chat">
-                        <p class="bot-title">GenBot</p>
-                        <p class="message-box"><span class="message-box"></span></p>
-                        <input class="user-input" type="text" id="user-input">
-                        <button class=" send-btn"><i class="fa-solid fa-share" style="color: #000000;"></i></button>
-                    </div>
+    <div class="bot-container">
+        <div class="bot-box">
+            <i class="bot-img fa-solid fa-robot fa-2xl"></i>
+            <div class="bot-chatbot">
+                <div class="bot-chat">
+                    <p class="bot-title">GenBot</p>
+                    <p class="message-box"><span class="message-box"></span></p>
+                    <input class="user-input" id="user-input" type="text">
+                    <button class=" send-btn"><i class="fa-solid fa-share" style="color: #000000;"></i></button>
                 </div>
             </div>
         </div>
+    </div>
 
 
-    </div>
-    </div>
-    <div class="footer">
-        <footer>Copyright nextgencrypto</footer>
-    </div>
+</div>
+<div class="footer">
+    <footer>Copyright nextgencrypto</footer>
+</div>
+
 </body>
 <script src="lib/script/app.js"></script>
 <script src="lib/script/buyandsale.js"></script>
+<script src="lib/script/siginup.js"></script>
 
 </html>

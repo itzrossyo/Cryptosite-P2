@@ -1,10 +1,12 @@
 [
   {
     "username": "alice",
-    "password": "password123"
+    "password": "password123",
+    "wallet": 0
   },
   {
     "username": "bob",
-    "password": "pass123"
+    "password": "pass123",
+    "wallet": 0
   }
 ]
