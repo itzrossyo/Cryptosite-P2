@@ -403,8 +403,8 @@ tr:hover {
 }
 
 .form-raido {
-text-align: center;
-    margin-top: 50px ;
+    text-align: center;
+    margin-top: 50px;
 }
 
 #coinSelection {
@@ -423,11 +423,13 @@ text-align: center;
     border-radius: 50px;
 }
 
-.confirm, .clear {
-border-radius:20px;
+.confirm,
+.clear {
+    border-radius: 20px;
     padding: 10px;
-    width:100px;
+    width: 100px;
 }
+
 .form-section {
     display: flex;
     flex-direction: column;
@@ -477,12 +479,12 @@ border-radius:20px;
         margin-top: 182px;
         margin-right: 288px;
     }
-nav{
-    font-size: 15px;
-}
-    tr:hover {
-        display: none;
+
+    nav {
+        font-size: 15px;
     }
+
+
 }
 
 /* tablet responsive END*/
@@ -552,17 +554,17 @@ nav{
         margin-top: 182px;
         margin-right: 14px;
     }
+}
 
-    /* mobile responsive END */
+/* mobile responsive END */
 
-    /* laptop responsive start */
-    @media screen and (min-width:1024px) {
+/* laptop responsive start */
+@media screen and (min-width:1024px) {
 
-        .grid-container {
-            gap: 10px;
-            grid-auto-rows: minmax(100px, auto);
-            margin-left: 20px;
+    .grid-container {
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 20px;
 
-        }
     }
 }
