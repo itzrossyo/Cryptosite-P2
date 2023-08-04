@@ -546,7 +546,8 @@ tr:hover {
     table {
 
         margin-top: 165px;
-        margin-left: 73px
+        margin-left: 73px;
+        font-size: 22px;
     }
 
     #signuph1 {
