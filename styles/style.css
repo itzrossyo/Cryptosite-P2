@@ -171,7 +171,6 @@ nav .btn {
 }
 
 
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -205,7 +204,6 @@ nav .btn {
     color: orange;
     text-shadow: -3px 2px 2px black;
 }
-
 
 
 .bot-box {
@@ -277,7 +275,7 @@ nav .btn {
 }
 
 
-#main-title-cryptopage>span {
+#main-title-cryptopage > span {
     color: orange;
 }
 
@@ -335,7 +333,6 @@ nav .btn {
     color: orange;
     font-size: 22px;
 }
-
 
 
 table {
@@ -443,13 +440,18 @@ tr:hover {
     justify-content: left;
 }
 
+#walletTable {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 20px;
+}
 
 /* signup page */
 
 
 /* tablet responsive start*/
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
     .btns {
         margin: 0 auto;
     }
@@ -473,7 +475,6 @@ tr:hover {
     }
 
 
-
     #signuph1 {
         text-align: center;
         margin-top: 182px;
@@ -488,7 +489,6 @@ tr:hover {
 }
 
 /* tablet responsive END*/
-
 
 
 /* mobile responsive start */
@@ -560,7 +560,7 @@ tr:hover {
 /* mobile responsive END */
 
 /* laptop responsive start */
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
 
     .grid-container {
         gap: 10px;
