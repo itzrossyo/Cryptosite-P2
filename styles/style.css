@@ -1,3 +1,4 @@
+/*noinspection CssUnknownTarget*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -27,7 +28,6 @@ a {
 }
 
 .container {
-    background: linear-gradient(355deg, rgb(59, 45, 95) 25%, rgb(12, 9, 32) 80%);
     background-image: url(../lib/images/blocks.jpg);
     background-position: center;
     background-size: cover;
@@ -114,6 +114,7 @@ nav .btn {
     overflow: hidden;
 }
 
+
 .dropdown-menu.open {
     animation: slide-left 0.5s cubic-bezier(0, 0, 0, 0) both;
 }
@@ -127,6 +128,7 @@ nav .btn {
         transform: translateX(-10px);
     }
 }
+
 
 .dropdown-menu.open {
     height: 230px;
@@ -144,6 +146,7 @@ nav .btn {
     align-items: center;
     justify-content: right;
 }
+
 
 .dropdown-menu .action_btn {
     width: 100%;
@@ -197,6 +200,7 @@ nav .btn {
     font-size: 1.5rem;
 }
 
+/*noinspection ALL*/
 .hotest-coin {
     text-align: center;
     margin: 0 auto;
@@ -283,7 +287,7 @@ nav .btn {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 40%;
+    bottom: 28%;
 }
 
 /* Styles for the arrow icon */
@@ -298,6 +302,7 @@ nav .btn {
 }
 
 /* Rotation and Bouncing animation */
+/*noinspection ALL*/
 .down {
     transform: rotate(45deg);
 }
@@ -378,6 +383,7 @@ tr:hover {
 
 /* buy and sale page */
 
+/*noinspection ALL*/
 #signuph1 {
     text-align: center;
     margin-top: 182px;
@@ -399,7 +405,7 @@ tr:hover {
     font-size: 40px;
 }
 
-.form-raido {
+.form-radio {
     text-align: center;
     margin-top: 50px;
 }
@@ -442,6 +448,7 @@ tr:hover {
 
 #walletTable {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
     font-size: 20px;
 }
@@ -452,6 +459,7 @@ tr:hover {
 /* tablet responsive start*/
 
 @media screen and (max-width: 770px) {
+    /*noinspection ALL*/
     .btns {
         margin: 0 auto;
     }
@@ -475,6 +483,7 @@ tr:hover {
     }
 
 
+    /*noinspection ALL*/
     #signuph1 {
         text-align: center;
         margin-top: 182px;
@@ -493,6 +502,7 @@ tr:hover {
 
 /* mobile responsive start */
 @media screen and (max-width: 480px) {
+    /*noinspection ALL*/
     .btns {
         margin: 0 auto;
     }
@@ -545,17 +555,23 @@ tr:hover {
 
     table {
 
-        margin-top: 165px;
-        margin-left: 73px;
-        font-size: 22px;
+        margin-top: 37px;
+        font-size: 13px;
+        border-spacing: 0 4px;
     }
 
+    /*noinspection ALL*/
     #signuph1 {
         text-align: center;
         margin-top: 182px;
         margin-right: 14px;
     }
+
+    #walletTable {
+        font-size: 16px;
+    }
 }
+
 
 /* mobile responsive END */
 
