@@ -454,7 +454,39 @@ tr:hover {
 }
 
 /* signup page */
+.reg-container {
+    display: flex;
+    text-align: center;
+    width: 41%;
+    font-size: 18px;
+    margin: 314px 0 119px 209px;
+    padding: 27px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
+}
+
+#registrationForm {
+    margin: 20px;
+}
+
+#regUsername, #regPassword, #loginUsername, #loginPassword {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    color: orange;
+    font-size: 20px;
+    margin-left: 30px;
+}
 
 /* tablet responsive start*/
 
@@ -492,6 +524,12 @@ tr:hover {
 
     nav {
         font-size: 15px;
+    }
+
+    .reg-container {
+        width: 85%;
+        font-size: 10px;
+        margin: 90px 0 0 32px;
     }
 
 
@@ -570,18 +608,50 @@ tr:hover {
     #walletTable {
         font-size: 16px;
     }
+
+    .reg-container {
+        width: 74%;
+        font-size: 10px;
+        margin: 90px 0 0 50px;
+    }
+
+    #registrationForm {
+        margin: 10px;
+    }
+
+    #regUsername, #regPassword, #loginUsername, #loginPassword {
+        padding: 10px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+
+    button {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: orange;
+        border-radius: 10px;
+        padding: 10px;
+        color: orange;
+        font-size: 16px;
+        margin-left: 15px;
+    }
 }
 
 
 /* mobile responsive END */
 
 /* laptop responsive start */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     .grid-container {
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
         margin-left: 20px;
 
+    }
+
+    .reg-container {
+        width: 57%;
+        font-size: 10px;
+        margin: 90px 0 0 32px;
     }
 }
