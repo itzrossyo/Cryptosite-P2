@@ -11,6 +11,7 @@
 
 body {
     background-color: rgb(40, 10, 100);
+
 }
 
 
@@ -287,7 +288,7 @@ nav .btn {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 28%;
+    bottom: 48%;
 }
 
 /* Styles for the arrow icon */
@@ -430,7 +431,7 @@ tr:hover {
 .clear {
     border-radius: 20px;
     padding: 10px;
-    width: 100px;
+    width: 120px;
 }
 
 .form-section {
@@ -479,13 +480,27 @@ tr:hover {
 }
 
 button {
-    background-color: rgba(0, 0, 0, 0);
     border-color: orange;
     border-radius: 10px;
     padding: 10px;
-    color: orange;
+    color: black;
     font-size: 20px;
     margin-left: 30px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content > h1 {
+    color: orange;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
 }
 
 /* tablet responsive start*/
@@ -532,7 +547,9 @@ button {
         margin: 90px 0 0 32px;
     }
 
-
+    .arrow-down {
+        bottom: 38%;
+    }
 }
 
 /* tablet responsive END*/
@@ -634,13 +651,18 @@ button {
         font-size: 16px;
         margin-left: 15px;
     }
+
+    .content > h1 {
+        color: orange;
+        font-size: 48px;
+    }
 }
 
 
 /* mobile responsive END */
 
 /* laptop responsive start */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
     .grid-container {
         gap: 10px;
