@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/3ff087e965.js" crossorigin="anonymous"></script>
+    <title>CryptoSitev2</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./lib/images/favicon.ico"/>
 
+</head>
+
+<body>
+<div class="container">
+    <nav>
+        <ul>
+            <li>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="cryptopricelist.html">Crypto Latest Price</a>
+            </li>
+            <li>
+                <a class="nav-link" href="buyandsell.html">Buy Sale Crypto</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">About us</a>
+            </li>
+        </ul>
+        <a href="register.html" class="btn" id="signup-btn">Sign Up</a>
+    </nav>
+
+    <i class="hamburger fa-solid fa-bars fa-2x toggle_btn"></i>
+
+    <div class="dropdown-menu">
+        <ul>
+            <li>
+                <a aria-label="Go to home page" href="index.html">Home</a>
+            </li>
+            <li>
+                <a aria-label="Go to Product page" href="cryptopricelist.html">crypto Latest Price</a>
+            </li>
+            <li>
+                <a aria-label="Go to About us page" href="buyandsell.html">Buy Sale Crypto</a>
+            </li>
+            <li>
+                <a aria-label="Go to About us page" href="aboutus.html">about us</a>
+            </li>
+            <li>
+                <a aria-label="Go to contact page" href="register.html">Login / Sign Up</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Welcome to CryptoSitev2, your gateway to next-gen crypto trading. We offer cutting-edge tools to navigate the
+            dynamic world of cryptocurrencies.</p>
+        <p>Our platform combines powerful bot trading tech with user-friendly interfaces, catering to both seasoned
+            traders and newcomers.</p>
+        <p>Our team of experts empowers you with informed trading decisions. We're dedicated to staying ahead of market
+            trends and enhancing your experience.</p>
+        <p>Join us in revolutionizing crypto trading. Explore crypto prices, trade options, and interact with GenBot,
+            our advanced trading bot.</p>
+        <p>Contact us for questions, suggestions, or feedback. Your success is our priority.</p>
+    </div>
+
+
+    <div class="bot-container">
+        <div class="bot-box">
+            <i class="bot-img fa-solid fa-robot fa-2xl"></i>
+            <div class="bot-chatbot">
+                <div class="bot-chat">
+                    <p class="bot-title">GenBot</p>
+                    <p class="message-box"><span class="message-box"></span></p>
+                    <label for="user-input"></label><input class="user-input" type="text" id="user-input">
+                    <button class=" send-btn"><i class="fa-solid fa-share" style="color: #000000;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer">
+    <footer>Copyright nextgencrypto</footer>
+</div>
+<script src="lib/script/aboutus.js"></script>
+<script src="lib/script/app.js"></script>
 </body>
+
+
 </html>
