@@ -52,7 +52,7 @@ newcomers. Cryptosite-P2 aims to bridge this knowledge gap by presenting valuabl
 
 - Name: Cryptosite-P2
 - Website: [https://itzrossyo.github.io/cryptosite-p2/](https://itzrossyo.github.io/cryptosite-p2/)
-- Purpose: To show how easy it is to get into cyrpto.
+- Purpose: To show how easy it is to get into crypto.
 - Target Audience: Anyone interested in learning about cryptocurrencies, from beginners to enthusiasts.
 
 ### User Goals
@@ -114,12 +114,12 @@ CTA) button leading to the "Get Involved" page.
 
 #### Footer / Chat bot
 
-The footer will contain essential key item the chat BOT in the right hand bottom cornor. also a copyright mark
+The footer will contain essential key item the chat BOT in the right hand bottom corner. also a copyright mark
 
 #### Home Page
 
 The homepage will provide a brief introduction to the website's purpose and feature key sections guiding users to
-explore further with the top 3 hotest coin.
+explore further with the top 3 hot coin.
 
 #### Buy and sale
 
@@ -201,7 +201,7 @@ To clone the Birmingham Egg repository:
     - iphone 12 max
     - iphone 12
     - google pixel 6
-- Brower's
+- Browser's
     - Google Chrome
     - Firefox
     - Opera
