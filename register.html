@@ -59,23 +59,21 @@
         <h1>User Registration & Login</h1>
 
         <!-- Registration Form -->
-        <form id="registrationForm">
-            <label for="regUsername"></label><input id="regUsername" placeholder="Username" required type="text">
-            <label for="regPassword"></label><input id="regPassword" placeholder="Password" required type="password">
-            <button type="submit">Register</button>
-        </form>
+
 
         <!-- Login Form -->
         <form id="loginForm">
             <label for="loginUsername"></label><input id="loginUsername" placeholder="Username" required type="text">
-            <label for="loginPassword"></label><input id="loginPassword" placeholder="Password" required
-                                                      type="password">
-            <button type="submit">Login</button>
+            <label for="loginPassword"></label><input id="loginPassword" placeholder="Password" required type="password">
+            <button class="loginButton" type="submit">Login</button>
         </form>
 
+        <form id="registrationForm">
+            <label for="regUsername"></label><input id="regUsername" placeholder="Username" required type="text">
+            <label for="regPassword"></label><input id="regPassword" placeholder="Password" required type="password">
+            <button class="registerButton" type="submit">Register</button>
+        </form>
         <div id="message"></div>
-
-        <!-- ... -->
     </div>
 
 
