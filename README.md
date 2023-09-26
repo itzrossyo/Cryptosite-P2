@@ -15,6 +15,7 @@
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
     - [Features](#features)
+    - [chatbot commands](#Commands)
     - [Accessibility](#accessibility)
 - [Technologies Used](#technologies-used)
 - [Deployment & Local Development](#deployment--local-development)
@@ -86,8 +87,8 @@ The main goals of users visiting Cryptosite-P2 are:
 
 ### Colour Scheme
 
-The website will use a modern and minimalistic color scheme, primarily consisting of blue, white, and hints of gold for
-highlights. The colors aim to convey a sense of trust, professionalism, and innovation.
+The website will use a modern and minimalistic color scheme, primarily consisting of orange, purple, and white for
+The colors aim to convey a sense of trust, and eye catching.
 
 ### Typography
 
@@ -103,7 +104,7 @@ enhance the visual appeal and maintain user engagement.
 
 - Chatbot
 - Register and login
--
+- live crypto price's
 
 #### Header
 
@@ -112,7 +113,19 @@ CTA) button leading to the "Get Involved" page.
 
 #### Footer / Chat bot
 
-The footer will contain essential key item the chat BOT in the right hand bottom corner. also a copyright mark
+The footer will contain essential key item the chat BOT in the right hand bottom corner. also a copyright mark</br>
+   
+### Commands
+* hello
+* help
+* crypto
+* buy
+* sell
+* swap
+* get started
+* wallet
+* invest
+* contact
 
 #### Home Page
 
@@ -223,12 +236,12 @@ To clone the Birmingham Egg repository:
 
 ### Solved Bugs
 
-| Num | Bug                                           | How I solved the bug                                                                                                                                                                                                                           | 
-|-----|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | Incorrect Data Displayed on Crypto Price Page | Confirm the source of the data being displayed. If the data is fetched from an API, review the API documentation and verify the request parameters and response structure.                                                                     |
-| 2   | Unresponsive Design on Mobile Devices         | implement a responsive design using media queries in your CSS. Ensure that the layout, images, and content adjust appropriately to different screen sizes. Test the responsiveness on various devices and screen sizes.                        |
-| 3   | Chatbot Not Displaying Messages               | Review the JavaScript code responsible for handling the chat bots functionality. Ensure that event listeners, user input processing, and responses are working as intended. Check for any errors in the browser console and debug accordingly. |
-| 4   | Unintended Page Redirects                     | Examine the HTML code for the links causing the issue. Ensure that the href attributes of the links point to the correct file paths or URLs. Correct any typos or errors in the links.                                                         |
+| Num | Bug                                           | How I solved the bug                                                                                                                                                                                                                             | 
+|-----|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Incorrect Data Displayed on Crypto Price Page | I Confirm the source of the data being displayed. If the data is fetched from an API, review the API documentation and verify the request parameters and response structure.                                                                     |
+| 2   | Unresponsive Design on Mobile Devices         | I implement a responsive design using media queries in your CSS. Ensure that the layout, images, and content adjust appropriately to different screen sizes. Test the responsiveness on various devices and screen sizes.                        |
+| 3   | Chatbot Not Displaying Messages               | I Review the JavaScript code responsible for handling the chat bots functionality. Ensure that event listeners, user input processing, and responses are working as intended. Check for any errors in the browser console and debug accordingly. |
+| 4   | Unintended Page Redirects                     | I Examined the HTML code for the links causing the issue. Ensure that the href attributes of the links point to the correct file paths or URLs. Correct any typos or errors in the links.                                                        |
 
 ### Known Bugs
 
