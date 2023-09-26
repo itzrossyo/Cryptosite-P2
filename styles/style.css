@@ -14,7 +14,10 @@ body {
 
 }
 
-
+.link {
+    color: blue;
+    text-decoration: underline;
+}
 ul,
 li,
 a {

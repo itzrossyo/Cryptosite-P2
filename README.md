@@ -26,13 +26,11 @@
     - [W3C Validator](#w3c-validator)
     - [Solved Bugs](#solved-bugs)
     - [Known Bugs](#known-bugs)
-- [Peer Feedback](#peer-feedback)
 - [Validation and Formatting](#validation-and-formatting)
 - [Testing User Stories](#testing-user-stories)
 - [Future Developments](#future-developments)
-- [Credits](#credits)
-    - [Content](#content)
-- [Acknowledgments](#acknowledgments)
+- [Content](#content)
+
 
 ---
 
@@ -234,15 +232,11 @@ To clone the Birmingham Egg repository:
 
 ### Known Bugs
 
-| known bugs | Bug issue                                                                          | Plan to resolve                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1          | Login users do not retain their balance when logged in, and the page is refreshed. | Currently, user account balances are not persisted between sessions. To address this, I plan to implement a backend database (DB) to store user account information securely. This will allow user balances to be retrieved and updated accurately, ensuring that their funds are maintained even after refreshing the page. By implementing a robust database solution, users' financial data will be stored securely and consistently, providing a seamless experience when using the platform. Additionally, this enhancement will pave the way for future features such as transaction history and portfolio tracking. |
+| known bugs | Bug issue                                                           | Plan to resolve                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|------------|---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1          | Login users do not retain their balance when logged in and  log out | Currently, user account balances are not persisted between sessions. To address this, I plan to implement a backend database (DB) to store user account information securely. This will allow user balances to be retrieved and updated accurately, ensuring that their funds are maintained even after refreshing the page. By implementing a robust database solution, users' financial data will be stored securely and consistently, providing a seamless experience when using the platform. Additionally, this enhancement will pave the way for future features such as transaction history and portfolio tracking. |
 
 ---
-
-## Peer Feedback
-
-[Include feedback from peers or reviewers during the development process.]
 
 ## Validation and Formatting
 
@@ -263,8 +257,6 @@ The website's code will be validated and properly formatted to adhere to industr
 I would love to expand on this but to rebuild it from scratch using a better framework like svelte and push more on the
 Database side for better user experience
 
-## Credits
-
 ### Content
 
 - Api from https://api.coinlore.net/api/tickers/
@@ -275,6 +267,4 @@ Database side for better user experience
   <br>
 - login idea from https://www.youtube.com/watch?v=ILviQic0c8g&list=LL&index=27&t=1001s&pp=gAQBiAQB
 
-## Acknowledgments
 
-[Show appreciation to anyone who helped or inspired the development of the website, such as mentors, contributors, or online resources.]
