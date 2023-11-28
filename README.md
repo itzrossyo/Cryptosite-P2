@@ -191,7 +191,7 @@ To clone the Birmingham Egg repository:
 
 1. Log in (or sign up) to GitHub.
 2. Go to the repository for this
-   project, [Birmingham-egg-milestone-project](https://github.com/itzrossyo/cryptosite-p2.git).
+   project, [CryptoSite](https://github.com/itzrossyo/cryptosite-p2.git).
 3. Click on the code button, select whether you would like to clone with
    HTTPS https://github.com/itzrossyo/cryptosite-p2.git and
    copy the link shown.
@@ -259,11 +259,11 @@ The website's code will be validated and properly formatted to adhere to industr
 
 ## Testing User Stories
 
-| Testing User Stories |                      | User Story                                                                                                                                 | Test Case                                                                                                    | Result                                                                                                                                          |
-|----------------------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| User Story           | Newcomer Exploration | As a newcomer to the world of cryptocurrencies, I want to understand the basics of how cryptocurrencies work and their potential benefits. | Navigate to the homepage and read the introductory content about cryptocurrencies and blockchain technology. | The homepage provides a clear and concise introduction to cryptocurrencies and blockchain, catering to newcomers' need for basic understanding. |
-| User Story           | Price Monitoring     | As an active investor, I want to stay up-to-date with the latest cryptocurrency prices to make informed trading decisions.                 | Navigate to the "Crypto Latest Price" page and observe the real-time prices of popular cryptocurrencies.     | The "Crypto Latest Price" page displays accurate and real-time cryptocurrency prices, allowing investors to monitor price trends effectively.   |
-| User Story           | Support and Feedback | As a user with questions or suggestions, I want a way to contact the website owners and receive timely responses.                          | Click the "ChatBot" and it was so simple to ask the questions                                                | The fast response from the chatbot made my questions to be so fast .                                                                            |
+| Testing User Stories |                      | User Story                                                                                                                                 | Test Case                                                                                                               | Result                                                                                                                                          |
+|----------------------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| User Story           | Newcomer Exploration | As a newcomer to the world of cryptocurrencies, I want to understand the basics of how cryptocurrencies work and their potential benefits. | I clicked the chatbot and typed help and this listed all the suggestions that was available  and about cryptocurrencies | The homepage provides a clear and concise introduction to cryptocurrencies and blockchain, catering to newcomers' need for basic understanding. |
+| User Story           | Price Monitoring     | As an active investor, I want to stay up-to-date with the latest cryptocurrency prices to make informed trading decisions.                 | Navigate to the "Crypto Latest Price" page and observe the real-time prices of popular cryptocurrencies.                | The "Crypto Latest Price" page displays accurate and real-time cryptocurrency prices, allowing investors to monitor price trends effectively.   |
+| User Story           | Support and Feedback | As a user with questions or suggestions, I want a way to contact the website owners and receive timely responses.                          | Click the "ChatBot" and it was so simple to ask the questions                                                           | The fast response from the chatbot made my questions to be so fast .                                                                            |
 
 ## Future Developments
 
