@@ -44,8 +44,10 @@ digital currencies.
 ### Background
 
 Cryptocurrency has gained significant attention in recent years, revolutionizing the financial landscape with its
-decentralized and secure nature. However, understanding the complexities of cryptocurrencies can be daunting for
-newcomers. Cryptosite-P2 aims to bridge this knowledge gap by presenting valuable information in an accessible format.
+decentralized and secure nature.
+However, the complexities of cryptocurrencies can be daunting for
+newcomers.
+Cryptosite-P2 aims to bridge this knowledge gap by presenting valuable information in an accessible format.
 
 ### Key Information
 
@@ -85,8 +87,8 @@ The main goals of users visiting Cryptosite-P2 are:
 
 ### Colour Scheme
 
-The website will use a modern and minimalistic color scheme, primarily consisting of orange, purple, and white for
-The colors aim to convey a sense of trust, and eye catching.
+The website will use a modern and minimalistic color scheme, primarily consisting of orange, purple, and white, for
+The colors aim to convey a sense of trust and eye catching.
 
 ### Typography
 
@@ -103,16 +105,16 @@ enhance the visual appeal and maintain user engagement.
 - Chatbot
 - Register and login
 - live crypto price's
-- the contact form is intend for only accesable in teh chatbot that links to google form's. 
+- the contact form is intended for only accesable in the chatbot that links to google's form. 
 
 #### Header
 
-The header will be fixed at the top of the page and will include the site logo, navigation menu, and a call-to-action (
-CTA) button leading to the "Get Involved" page.
+The header will be fixed at the top of the page and will include the site logo,
+navigation menu, and a call-to-action (CTA) button leading to the "Get Involved" page.
 
 #### Footer / Chat bot
 
-The footer will contain essential key item the chat BOT in the right hand bottom corner. also a copyright mark</br>
+The footer will contain essential key item the chat BOT in the right-hand bottom corner. Also, a copyright mark</br>
    
 ### Commands
 * hello
@@ -129,7 +131,7 @@ The footer will contain essential key item the chat BOT in the right hand bottom
 #### Home Page
 
 The homepage will provide a brief introduction to the website's purpose and feature key sections guiding users to
-explore further with the top 3 hot coin.
+explore further with the top 3 hot coins.
 
 #### Buy and sale
 

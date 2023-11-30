@@ -71,7 +71,7 @@ nav .btn {
 .btn-container {
     display: flex;
     text-align: center;
-    margin: 150px auto;
+    margin: 118px auto;
     flex-wrap: nowrap;
     gap: 40px;
     justify-content: center;
