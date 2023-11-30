@@ -59,7 +59,6 @@ newcomers. Cryptosite-P2 aims to bridge this knowledge gap by presenting valuabl
 The main goals of users visiting Cryptosite-P2 are:
 
 - To gain a better understanding of what cryptocurrencies are and how they work.
-- To learn about the underlying technology of blockchain and its applications.
 - To find reliable information and resources related to cryptocurrency investing and trading.
 - To contact the website owners for further inquiries or feedback.
 
@@ -76,7 +75,6 @@ The main goals of users visiting Cryptosite-P2 are:
 
 ### Frequent Visitor Goals
 
-- Engage with the site's community through testimonials and contributions.
 - Participate in discussions or events related to cryptocurrencies.
 
 ## Design
@@ -105,6 +103,7 @@ enhance the visual appeal and maintain user engagement.
 - Chatbot
 - Register and login
 - live crypto price's
+- the contact form is intend for only accesable in teh chatbot that links to google form's. 
 
 #### Header
 
