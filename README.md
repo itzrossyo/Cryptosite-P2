@@ -37,7 +37,8 @@
 
 ## User Experience (UX)
 
-Cryptosite-P2 is a website aimed at providing users with information about cryptocurrency and blockchain technology. The
+Cryptosite-P2 is a website aimed at providing users with information about cryptocurrency.
+The
 site aims to create an informative and user-friendly experience for visitors interested in understanding the world of
 digital currencies.
 
@@ -97,7 +98,7 @@ experience for users.
 
 ### Imagery
 
-High-quality and relevant images related to cryptocurrencies and blockchain will be used throughout the website to
+High-quality and relevant images related to cryptocurrencies will be used throughout the website to
 enhance the visual appeal and maintain user engagement.
 
 ### Features
@@ -223,7 +224,7 @@ To clone the Birmingham Egg repository:
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|-----------|
 | font-awesome icons            | icons will be used on the menu drop down to indicate what links do what more for friendly use case                                | Clicked the hamburger button on mobile and desktop to confirm icons display and animate.                                       | Icons displayed and animated as expected.          | Pass      |
 | 404 error page                | this should come up when the user page won't load or are side it down giving them a custom special message                        | Accessed a non-existing URL to trigger the 404 page. Verified the custom message                                               | Custom 404 page appeared with correct message.     | Pass      |
-| Informative Chatbot           | The interactive chatbot, GenBot, offers users valuable information about cryptocurrencies, blockchain, and trading strategies.    | Engaged with GenBot by asking questions about crypto basics and blockchain. Checked responses for accuracy.                    | GenBot provided accurate and relevant information. | Pass      |
+| Informative Chatbot           | The interactive chatbot, GenBot, offers users valuable information about cryptocurrencies.                                        | Engaged with GenBot by asking questions about crypto basics. Checked responses for accuracy.                                   | GenBot provided accurate and relevant information. | Pass      |
 | User Registration and Login   | A user registration and login system allows users to create accounts, log in, and securely access personalized features.          | Attempted to register new user accounts and log in with existing accounts. Verified account creation and secure login process. | User accounts created and login process secure.    | Pass      |
 | Cryptocurrency Price Tracking | Users can view the latest prices of various cryptocurrencies, helping them stay informed about market fluctuations and trends.    | The test we performed by using the device and click the link and seeing if this did open google maps ready for you             | Displayed prices matched actual market data.       | Pass      |
 | hamburger Button/animation    | once the page has loaded and on mobile the hamburger will do an animation showing a wobble effect lifting people know to press it | This test was preformed by once the page has loaded and watching it to see if it acutely wobbled                               | this did not work as intended                      | Fail      |
